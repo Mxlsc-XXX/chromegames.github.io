@@ -43,20 +43,21 @@
 
         .button {
             background-image: url('button.gif'); /* Substitua pelo caminho do seu GIF */
-            background-size: cover;
+            background-size: 100% 100%; /* Faz o GIF cobrir todo o botão */
             color: white; /* Cor do texto do botão */
             border: none; /* Sem borda */
             border-radius: 5px; /* Cantos arredondados */
             font-size: 1.5em; /* Tamanho da fonte */
             cursor: pointer; /* Muda o cursor ao passar o mouse */
             width: 80%; /* Largura do botão igual ao frame */
-            max-width: 600px; /* Largura máxima do botão */
             height: 60px; /* Definindo uma altura fixa para o botão */
             display: flex; /* Usado para alinhar o texto */
             justify-content: center; /* Alinha horizontalmente */
             align-items: center; /* Alinha verticalmente */
             text-align: center; /* Centraliza o texto */
+            padding: 0; /* Remove o padding para evitar espaço extra */
             margin-top: 0; /* Remove o espaçamento acima do botão */
+            line-height: 60px; /* Alinha verticalmente o texto */
         }
 
         .button:hover {
@@ -91,8 +92,4 @@
         </p>
     </div>
 
-    <a href="https://github.com/Mxlsc-XXX" target="_blank" style="text-decoration: none;">
-        <button class="button">Visite meu GitHub</button>
-    </a>
-</body>
-</html>
+    <a href="https://github.com/Mxlsc-XXX" target="_blank"
