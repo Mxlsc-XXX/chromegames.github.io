@@ -45,18 +45,22 @@
             background-image: url('button.gif'); /* Substitua pelo caminho do seu GIF */
             background-size: cover;
             color: white; /* Cor do texto do botão */
-            padding: 15px 20px; /* Espaçamento interno */
             border: none; /* Sem borda */
             border-radius: 5px; /* Cantos arredondados */
             font-size: 1.5em; /* Tamanho da fonte */
             cursor: pointer; /* Muda o cursor ao passar o mouse */
             width: 80%; /* Largura do botão igual ao frame */
             max-width: 600px; /* Largura máxima do botão */
-            margin-top: 10px; /* Espaçamento acima do botão */
+            height: 60px; /* Definindo uma altura fixa para o botão */
+            display: flex; /* Usado para alinhar o texto */
+            justify-content: center; /* Alinha horizontalmente */
+            align-items: center; /* Alinha verticalmente */
+            text-align: center; /* Centraliza o texto */
+            margin-top: 0; /* Remove o espaçamento acima do botão */
         }
 
         .button:hover {
-            background-color: #45a049; /* Cor do botão ao passar o mouse */
+            opacity: 0.8; /* Efeito ao passar o mouse */
         }
     </style>
 </head>
@@ -87,7 +91,7 @@
         </p>
     </div>
 
-    <a href="https://github.com/Mxlsc-XXX" target="_blank">
+    <a href="https://github.com/Mxlsc-XXX" target="_blank" style="text-decoration: none;">
         <button class="button">Visite meu GitHub</button>
     </a>
 </body>
