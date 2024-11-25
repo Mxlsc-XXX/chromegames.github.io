@@ -1,24 +1,21 @@
-/* Definindo o fundo com o GIF */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Faz o body ocupar toda a altura da tela */
-    background-image: url('site.gif'); /* Caminho do seu GIF */
-    background-size: cover; /* Faz o GIF cobrir toda a tela */
-    background-position: center; /* Coloca o GIF no centro */
-    background-repeat: no-repeat; /* Impede que o GIF se repita */
+    height: 100vh;
+    background-image: url('site.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
 }
 
-/* Estilizando o título */
 h1 {
     margin-top: 20px;
     font-size: 3em;
 }
 
-/* Estilizando o parágrafo */
 p {
     font-size: 1.5em;
 }
