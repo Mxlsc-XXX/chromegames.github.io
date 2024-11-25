@@ -17,6 +17,7 @@
             color: white;
             text-align: center;
             display: flex;
+            flex-direction: column; /* Altera a direção para coluna */
             justify-content: center;
             align-items: center;
         }
@@ -28,6 +29,7 @@
             width: 80%; 
             max-width: 600px; 
             text-align: center;
+            margin-bottom: 20px; /* Espaçamento entre os frames */
         }
 
         h1 {
@@ -37,6 +39,24 @@
 
         p {
             font-size: 1.5em;
+        }
+
+        .button {
+            background-image: url('button.gif'); /* Substitua pelo caminho do seu GIF */
+            background-size: cover;
+            color: white; /* Cor do texto do botão */
+            padding: 15px 20px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Cantos arredondados */
+            font-size: 1.5em; /* Tamanho da fonte */
+            cursor: pointer; /* Muda o cursor ao passar o mouse */
+            width: 80%; /* Largura do botão igual ao frame */
+            max-width: 600px; /* Largura máxima do botão */
+            margin-top: 10px; /* Espaçamento acima do botão */
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Cor do botão ao passar o mouse */
         }
     </style>
 </head>
@@ -66,5 +86,9 @@
             a bit of C#.
         </p>
     </div>
+
+    <a href="https://github.com/seu-perfil" target="_blank">
+        <button class="button">Visite meu GitHub</button>
+    </a>
 </body>
 </html>
