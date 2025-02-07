@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos que ainda rodam no Chromebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/9bc27292880429.5e569ff84e4d0.gif'); /* URL do GIF */
+            background-size: cover;
+            background-repeat: no-repeat; /* Não repetir o fundo */
+            background-attachment: fixed; /* Manter o fundo fixo */
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .game-list {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+        }
+        .game-item {
+            background-color: rgba(0, 0, 0, 0.7); /* Preto translúcido */
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+        .game-item:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Escurece ao passar o mouse */
+        }
+        .game-item a {
+            text-decoration: none;
+            color: #61dafb;
+            font-size: 1.2em;
+        }
+        .game-item a:hover {
+            text-decoration: underline;
+        }
+        .description {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        /* Estilo do pop-up */
+        .popup {
+            display: none; /* Inicialmente escondido */
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        .overlay {
+            display: none; /* Inicialmente escondido */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogos que ainda rodam no Chromebook</h1>
+    <ul class="game-list">
+        <li class="game-item">
+            <a href="https://danihre.github.io/jsdoom/" target="_blank">DOOM</a>
+            <p class="description">Um clássico jogo de tiro em primeira pessoa.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://codeincomplete.com/games/pong/" target="_blank">PONG</a>
+            <p class="description">O famoso jogo de tênis de mesa em 2D.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/220672247?fps=120&offscreen&limitless&hqpen" target="_blank">OSU MANIA</a>
+            <p class="description">Um jogo de ritmo daorinha kk.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/36711178/fullscreen" target="_blank">MARIO KART</a>
+            <p class="description">Jogo de corrida famoso da empresa Nintendo.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/66146572/fullscreen" target="_blank">AGAR.IO</a>
+            <p class="description">Um jogo multiplayer online de sobrevivência.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/108566337/fullscreen" target="_blank">SL ITHER.IO</a>
+            <p class="description">Um jogo de cobra multiplayer divertido.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/2569483/fullscreen" target="_blank">TETRIS</a>
+            <p class="description">Um clássico jogo de quebra-cabeça onde você deve empilhar blocos para formar linhas completas.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/544407064/fullscreen" target="_blank">FNAF 4</a>
+            <p class="description">Um clássico da franquia FNAF.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/323425823/fullscreen" target="_blank">FNAF 2</a>
+            <p class="description">Um clássico da franquia FNAF.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/547735459/fullscreen" target="_blank">FNAF 2</a>
+            <p class="description">Um clássico da franquia FNAF.</p>
+        </li>
+        <li class="game-item">
+            <a href="https://turbowarp.org/433435327/fullscreen" target="_blank">FNAF UCN</a>
+            <p class="description">Um clássico da franquia FNAF.</p>
+        </li>
+        
+    </ul>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p>Você já fez as tarefas escolares?</p>
+        <button id="yesBtn">Sim</button>
+        <button id="noBtn">Não</button>
+    </div>
+    <div class="popup" id="noPopup" style="display: none;">
+        <p>Vá fazer suas tarefas!</p>
+    </div>
+    <script>
+        window.onload = function() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        };
+
+        document.getElementById('yesBtn').onclick = function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        };
+
+        document.getElementById('noBtn').onclick = function() {
+            document.getElementById('noPopup').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
+Para a sugestão de jogos, envie um email para: Mxlsc@proton.me
+Para ajudar nossa equipe, envie um pix para: b94d8253-f7f1-4ed0-8c9f-8ebc6637acdf
+Qualquer valor é uma ajuda incrivel!
